@@ -167,9 +167,9 @@ public class SortingPractice {
         // for loop to iterate through array
         for (int size = 1; size <= array.length/2; size = size * 2) {
             for (int i = 0; i < array.length; i = i + 2 * size) {
-                t = merge(slice(array, i, i + size), slice(array, i + size, i + 2 * size));
-                for (int j = 0; j < t.length; j++) {
-                    array[i+j] = t[j];
+                temp = merge(slice(array, i, i + size), slice(array, i + size, i + 2 * size));
+                for (int j = 0; j < temp.length; j++) {
+                    array[i+j] = temp[j];
                 }
             }
         }
